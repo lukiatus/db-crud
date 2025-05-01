@@ -1,0 +1,17 @@
+<Bands>
+  <Band>
+    <Id>1</Id>
+    <Name>The Rockers</Name>
+    <LeaderMusicianId>1</LeaderMusicianId>
+  </Band>
+  <Band>
+    <Id>2</Id>
+    <Name>Jazz Vibes</Name>
+    <LeaderMusicianId>4</LeaderMusicianId>
+  </Band>
+  <Band>
+    <Id>3</Id>
+    <Name>Blues Express</Name>
+    <LeaderMusicianId>8</LeaderMusicianId>
+  </Band>
+</Bands>

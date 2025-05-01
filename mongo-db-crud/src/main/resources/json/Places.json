@@ -1,0 +1,38 @@
+[
+  {
+    "_id": 1,
+    "Country": "USA",
+    "City": "Las Vegas",
+    "Street": "E. Flamingo Rd",
+    "StreetNumber": 2550,
+    "Name": "The Rainbow Bar",
+    "Capacity": 200
+  },
+  {
+    "_id": 2,
+    "Country": "USA",
+    "City": "Las Vegas",
+    "Street": "W Tropicana Ave",
+    "StreetNumber": 4974,
+    "Name": "The Cat’s Meow",
+    "Capacity": 300
+  },
+  {
+    "_id": 3,
+    "Country": "USA",
+    "City": "Las Vegas",
+    "Street": "Las Vegas Blvd S",
+    "StreetNumber": 3771,
+    "Name": "The Hard Rock Café",
+    "Capacity": 600
+  },
+  {
+    "_id": 4,
+    "Country": "USA",
+    "City": "Las Vegas",
+    "Street": "E Tropicana Ave",
+    "StreetNumber": 1510,
+    "Name": "The Dive Bar ",
+    "Capacity": 150
+  }
+]

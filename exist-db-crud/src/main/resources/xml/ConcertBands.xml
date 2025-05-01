@@ -1,0 +1,22 @@
+<ConcertBands>
+  <ConcertBand>
+    <BandId>1</BandId>
+    <ConcertId>1</ConcertId>
+  </ConcertBand>
+  <ConcertBand>
+    <BandId>2</BandId>
+    <ConcertId>2</ConcertId>
+  </ConcertBand>
+  <ConcertBand>
+    <BandId>3</BandId>
+    <ConcertId>3</ConcertId>
+  </ConcertBand>
+  <ConcertBand>
+    <BandId>3</BandId>
+    <ConcertId>4</ConcertId>
+  </ConcertBand>
+  <ConcertBand>
+    <BandId>3</BandId>
+    <ConcertId>1</ConcertId>
+  </ConcertBand>
+</ConcertBands>

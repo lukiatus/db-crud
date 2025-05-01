@@ -1,0 +1,98 @@
+[
+  {
+    "_id": 1,
+    "Name": "The Rockers",
+    "LeaderMusician": {
+      "Id": 1,
+      "Name": "John Doe",
+      "Email": "john.doe@example.com",
+      "BirthYear": 1973
+    },
+    "Musicians": [
+      {
+        "_id": 1,
+        "Name": "John Doe",
+        "Email": "john.doe@example.com",
+        "BirthYear": 1973
+      },
+      {
+        "_id": 2,
+        "Name": "Jane Smith",
+        "Email": "jane.smith@example.com",
+        "BirthYear": 1981
+      },
+      {
+        "_id": 3,
+        "Name": "Mike Brown",
+        "Email": "mike.brown@example.com",
+        "BirthYear": 1989
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "Name": "Jazz Vibes",
+    "LeaderMusician": {
+      "_id": 2,
+      "Name": "Jane Smith",
+      "Email": "jane.smith@example.com",
+      "BirthYear": 1981
+    },
+    "Musicians": [
+      {
+        "_id": 4,
+        "Name": "Emily White",
+        "Email": "emily.white@example.com",
+        "BirthYear": 1970
+      },
+      {
+        "_id": 5,
+        "Name": "Daniel Jones",
+        "Email": "daniel.jones@example.com",
+        "BirthYear": 1982
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "Name": "Blues Express",
+    "LeaderMusician": {
+      "_id": 3,
+      "Name": "Mike Brown",
+      "Email": "mike.brown@example.com",
+      "BirthYear": 1989
+    },
+    "Musicians": [
+      {
+        "_id": 6,
+        "Name": "Sara Lee",
+        "Email": "sara.lee@example.com",
+        "BirthYear": 1979
+      },
+      {
+        "_id": 7,
+        "Name": "Chris Green",
+        "Email": "chris.green@example.com",
+        "BirthYear": 1980
+      },
+      {
+        "_id": 8,
+        "Name": "Laura King",
+        "Email": "laura.king@example.com",
+        "BirthYear": 1990
+      },
+      {
+        "_id": 9,
+        "Name": "Robert Taylor",
+        "Email": "robert.taylor@example.com",
+        "BirthYear": 1991
+      },
+      {
+        "_id": 10,
+        "Name": "Olivia Wilson",
+        "Email": "olivia.wilson@example.com",
+        "BirthYear": 1994
+      }
+    ]
+  }
+]
