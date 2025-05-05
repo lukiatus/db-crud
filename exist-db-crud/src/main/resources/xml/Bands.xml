@@ -1,14 +1,17 @@
-<Bands>
-  <Band Id="1" LeaderMusicianId="1">
-    <Name>The Rockers</Name>
-    <LeaderMusicianId>1</LeaderMusicianId>
-  </Band>
-  <Band Id="2">
-    <Name>Jazz Vibes</Name>
-    <LeaderMusicianId>4</LeaderMusicianId>
-  </Band>
-  <Band Id="3">
-    <Name>Blues Express</Name>
-    <LeaderMusicianId>8</LeaderMusicianId>
-  </Band>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bands xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../schema/Bands.xsd">
+    <Band Id="1" LeaderMusicianId="1">
+        <Name>The Rockers</Name>
+        <LeaderMusicianId>1</LeaderMusicianId>
+    </Band>
+    <Band Id="2">
+        <Name>Jazz Vibes</Name>
+        <LeaderMusicianId>4</LeaderMusicianId>
+    </Band>
+    <Band Id="3">
+        <Name>Blues Express</Name>
+        <LeaderMusicianId>8</LeaderMusicianId>
+    </Band>
 </Bands>

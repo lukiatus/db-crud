@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Concerts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Concert" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Description" type="xs:string"/>
+                            <xs:element name="Date" type="xs:date"/>
+                            <xs:element name="FlyerUrl" type="xs:anyURI"/>
+                            <xs:element name="PlaceId" type="xs:integer"/>
+                            <xs:element name="HeadlinerBandId" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="Id" type="xs:integer" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Optional referential integrity constraints (only work if <Band> and <Place> defined here): -->
+        <xs:key name="ConcertKey">
+            <xs:selector xpath="Concert"/>
+            <xs:field xpath="@Id"/>
+        </xs:key>
+
+        <xs:keyref name="Concert_PlaceRef" refer="PlaceKey">
+            <xs:selector xpath="Concert"/>
+            <xs:field xpath="PlaceId"/>
+        </xs:keyref>
+
+        <xs:keyref name="Concert_BandRef" refer="BandKey">
+            <xs:selector xpath="Concert"/>
+            <xs:field xpath="HeadlinerBandId"/>
+        </xs:keyref>
+
+    </xs:element>
+
+</xs:schema>

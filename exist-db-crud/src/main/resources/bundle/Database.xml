@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="Database.xsd">
+    <BandMusicians>
+        <BandMusician>
+            <MusicianId>1</MusicianId>
+            <BandId>1</BandId>
+        </BandMusician>
+        <BandMusician>
+            <MusicianId>2</MusicianId>
+            <BandId>1</BandId>
+        </BandMusician>
+        <BandMusician>
+            <MusicianId>3</MusicianId>
+            <BandId>1</BandId>
+        </BandMusician>
+        <BandMusician>
+            <MusicianId>4</MusicianId>
+            <BandId>2</BandId>
+        </BandMusician>
+        <BandMusician>
+            <MusicianId>5</MusicianId>
+            <BandId>2</BandId>
+        </BandMusician>
+        <BandMusician>
+            <MusicianId>6</MusicianId>
+            <BandId>3</BandId>
+        </BandMusician>
+        <BandMusician>
+            <MusicianId>7</MusicianId>
+            <BandId>3</BandId>
+        </BandMusician>
+        <BandMusician>
+            <MusicianId>8</MusicianId>
+            <BandId>3</BandId>
+        </BandMusician>
+        <BandMusician>
+            <MusicianId>9</MusicianId>
+            <BandId>3</BandId>
+        </BandMusician>
+        <BandMusician>
+            <MusicianId>10</MusicianId>
+            <BandId>3</BandId>
+        </BandMusician>
+    </BandMusicians>
+
+    <Bands>
+        <Band Id="1" LeaderMusicianId="1">
+            <Name>The Rockers</Name>
+            <LeaderMusicianId>1</LeaderMusicianId>
+        </Band>
+        <Band Id="2">
+            <Name>Jazz Vibes</Name>
+            <LeaderMusicianId>4</LeaderMusicianId>
+        </Band>
+        <Band Id="3">
+            <Name>Blues Express</Name>
+            <LeaderMusicianId>8</LeaderMusicianId>
+        </Band>
+    </Bands>
+
+    <ConcertBands>
+        <ConcertBand>
+            <BandId>1</BandId>
+            <ConcertId>1</ConcertId>
+        </ConcertBand>
+        <ConcertBand>
+            <BandId>2</BandId>
+            <ConcertId>2</ConcertId>
+        </ConcertBand>
+        <ConcertBand>
+            <BandId>3</BandId>
+            <ConcertId>3</ConcertId>
+        </ConcertBand>
+        <ConcertBand>
+            <BandId>3</BandId>
+            <ConcertId>4</ConcertId>
+        </ConcertBand>
+        <ConcertBand>
+            <BandId>3</BandId>
+            <ConcertId>1</ConcertId>
+        </ConcertBand>
+    </ConcertBands>
+
+    <Concerts>
+        <Concert Id="1">
+            <Description>Thunder &amp; Steel: Live in the Desert</Description>
+            <Date>2025-08-20</Date>
+            <FlyerUrl>https://example.com/flyer1.jpg</FlyerUrl>
+            <PlaceId>1</PlaceId>
+            <HeadlinerBandId>1</HeadlinerBandId>
+        </Concert>
+        <Concert Id="2">
+            <Description>Riff Riot Vegas</Description>
+            <Date>2025-08-25</Date>
+            <FlyerUrl>https://example.com/flyer2.jpg</FlyerUrl>
+            <PlaceId>2</PlaceId>
+            <HeadlinerBandId>1</HeadlinerBandId>
+        </Concert>
+        <Concert Id="3">
+            <Description>Neon Inferno Tour</Description>
+            <Date>2025-10-15</Date>
+            <FlyerUrl>https://example.com/flyer3.jpg</FlyerUrl>
+            <PlaceId>3</PlaceId>
+            <HeadlinerBandId>1</HeadlinerBandId>
+        </Concert>
+        <Concert Id="4">
+            <Description>Backstage Havoc</Description>
+            <Date>2025-07-15</Date>
+            <FlyerUrl>https://example.com/flyer4.jpg</FlyerUrl>
+            <PlaceId>4</PlaceId>
+            <HeadlinerBandId>2</HeadlinerBandId>
+        </Concert>
+        <Concert Id="5">
+            <Description>High Voltage Overdrive</Description>
+            <Date>2025-09-05</Date>
+            <FlyerUrl>https://example.com/flyer4.jpg</FlyerUrl>
+            <PlaceId>2</PlaceId>
+            <HeadlinerBandId>1</HeadlinerBandId>
+        </Concert>
+        <Concert Id="6">
+            <Description>Leather &amp; Lights Rock Bash</Description>
+            <Date>2025-08-13</Date>
+            <FlyerUrl>https://example.com/flyer4.jpg</FlyerUrl>
+            <PlaceId>2</PlaceId>
+            <HeadlinerBandId>3</HeadlinerBandId>
+        </Concert>
+    </Concerts>
+
+    <Musicians>
+        <Musician Id="1">
+            <Email>john.doe@example.com</Email>
+            <BirthYear>1973</BirthYear>
+            <Name>John Doe</Name>
+        </Musician>
+        <Musician Id="2">
+            <Email>jane.smith@example.com</Email>
+            <BirthYear>1981</BirthYear>
+            <Name>Jane Smith</Name>
+        </Musician>
+        <Musician Id="3">
+            <Email>mike.brown@example.com</Email>
+            <BirthYear>1989</BirthYear>
+            <Name>Mike Brown</Name>
+        </Musician>
+        <Musician Id="4">
+            <Email>emily.white@example.com</Email>
+            <BirthYear>1970</BirthYear>
+            <Name>Emily White</Name>
+        </Musician>
+        <Musician Id="5">
+            <Email>daniel.jones@example.com</Email>
+            <BirthYear>1982</BirthYear>
+            <Name>Daniel Jones</Name>
+        </Musician>
+        <Musician Id="6">
+            <Email>sara.lee@example.com</Email>
+            <BirthYear>1979</BirthYear>
+            <Name>Sara Lee</Name>
+        </Musician>
+        <Musician Id="7">
+            <Email>chris.green@example.com</Email>
+            <BirthYear>1980</BirthYear>
+            <Name>Chris Green</Name>
+        </Musician>
+        <Musician Id="8">
+            <Email>laura.king@example.com</Email>
+            <BirthYear>1990</BirthYear>
+            <Name>Laura King</Name>
+        </Musician>
+        <Musician Id="9">
+            <Email>robert.taylor@example.com</Email>
+            <BirthYear>1991</BirthYear>
+            <Name>Robert Taylor</Name>
+        </Musician>
+        <Musician Id="10">
+            <Email>olivia.wilson@example.com</Email>
+            <BirthYear>1994</BirthYear>
+            <Name>Olivia Wilson</Name>
+        </Musician>
+    </Musicians>
+
+    <Places>
+        <Place Id="1">
+            <Country>USA</Country>
+            <City>Las Vegas</City>
+            <Street>E. Flamingo Rd</Street>
+            <StreetNumber>2550</StreetNumber>
+            <Name>The Rainbow Bar</Name>
+            <Capacity>200</Capacity>
+        </Place>
+        <Place Id="2">
+            <Country>USA</Country>
+            <City>Las Vegas</City>
+            <Street>W Tropicana Ave</Street>
+            <StreetNumber>4974</StreetNumber>
+            <Name>The Cat’s Meow</Name>
+            <Capacity>300</Capacity>
+        </Place>
+        <Place Id="3">
+            <Country>USA</Country>
+            <City>Las Vegas</City>
+            <Street>Las Vegas Blvd S</Street>
+            <StreetNumber>3771</StreetNumber>
+            <Name>The Hard Rock Café</Name>
+            <Capacity>600</Capacity>
+        </Place>
+        <Place Id="4">
+            <Country>USA</Country>
+            <City>Las Vegas</City>
+            <Street>E Tropicana Ave</Street>
+            <StreetNumber>1510</StreetNumber>
+            <Name>The Dive Bar</Name>
+            <Capacity>150</Capacity>
+        </Place>
+    </Places>
+</Database>

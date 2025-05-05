@@ -1,34 +1,37 @@
-<Places>
-  <Place Id="1">
-    <Country>USA</Country>
-    <City>Las Vegas</City>
-    <Street>E. Flamingo Rd</Street>
-    <StreetNumber>2550</StreetNumber>
-    <Name>The Rainbow Bar</Name>
-    <Capacity>200</Capacity>
-  </Place>
-  <Place Id="2">
-    <Country>USA</Country>
-    <City>Las Vegas</City>
-    <Street>W Tropicana Ave</Street>
-    <StreetNumber>4974</StreetNumber>
-    <Name>The Cat’s Meow</Name>
-    <Capacity>300</Capacity>
-  </Place>
-  <Place Id="3">
-    <Country>USA</Country>
-    <City>Las Vegas</City>
-    <Street>Las Vegas Blvd S</Street>
-    <StreetNumber>3771</StreetNumber>
-    <Name>The Hard Rock Café</Name>
-    <Capacity>600</Capacity>
-  </Place>
-  <Place Id="4">
-    <Country>USA</Country>
-    <City>Las Vegas</City>
-    <Street>E Tropicana Ave</Street>
-    <StreetNumber>1510</StreetNumber>
-    <Name>The Dive Bar </Name>
-    <Capacity>150</Capacity>
-  </Place>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Places xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../schema/Places.xsd">
+    <Place Id="1">
+        <Country>USA</Country>
+        <City>Las Vegas</City>
+        <Street>E. Flamingo Rd</Street>
+        <StreetNumber>2550</StreetNumber>
+        <Name>The Rainbow Bar</Name>
+        <Capacity>200</Capacity>
+    </Place>
+    <Place Id="2">
+        <Country>USA</Country>
+        <City>Las Vegas</City>
+        <Street>W Tropicana Ave</Street>
+        <StreetNumber>4974</StreetNumber>
+        <Name>The Cat’s Meow</Name>
+        <Capacity>300</Capacity>
+    </Place>
+    <Place Id="3">
+        <Country>USA</Country>
+        <City>Las Vegas</City>
+        <Street>Las Vegas Blvd S</Street>
+        <StreetNumber>3771</StreetNumber>
+        <Name>The Hard Rock Café</Name>
+        <Capacity>600</Capacity>
+    </Place>
+    <Place Id="4">
+        <Country>USA</Country>
+        <City>Las Vegas</City>
+        <Street>E Tropicana Ave</Street>
+        <StreetNumber>1510</StreetNumber>
+        <Name>The Dive Bar</Name>
+        <Capacity>150</Capacity>
+    </Place>
 </Places>

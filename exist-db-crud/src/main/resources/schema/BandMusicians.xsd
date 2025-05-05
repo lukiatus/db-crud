@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="BandMusicians">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="BandMusician" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MusicianId" type="xs:integer"/>
+                            <xs:element name="BandId" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Optional referential integrity constraints: -->
+        <xs:keyref name="BandMusician_MusicianRef" refer="MusicianKey">
+          <xs:selector xpath="BandMusician"/>
+          <xs:field xpath="MusicianId"/>
+        </xs:keyref>
+
+        <xs:keyref name="BandMusician_BandRef" refer="BandKey">
+          <xs:selector xpath="BandMusician"/>
+          <xs:field xpath="BandId"/>
+        </xs:keyref>
+
+    </xs:element>
+
+</xs:schema>
