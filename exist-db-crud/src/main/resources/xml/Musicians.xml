@@ -1,62 +1,52 @@
 <Musicians>
-  <Musician>
+  <Musician Id="1">
     <Email>john.doe@example.com</Email>
     <BirthYear>1973</BirthYear>
-    <Id>1</Id>
     <Name>John Doe</Name>
   </Musician>
-  <Musician>
+  <Musician Id="2">
     <Email>jane.smith@example.com</Email>
     <BirthYear>1981</BirthYear>
-    <Id>2</Id>
     <Name>Jane Smith</Name>
   </Musician>
-  <Musician>
+  <Musician Id="3">
     <Email>mike.brown@example.com</Email>
     <BirthYear>1989</BirthYear>
-    <Id>3</Id>
     <Name>Mike Brown</Name>
   </Musician>
-  <Musician>
+  <Musician Id="4">
     <Email>emily.white@example.com</Email>
     <BirthYear>1970</BirthYear>
-    <Id>4</Id>
     <Name>Emily White</Name>
   </Musician>
-  <Musician>
+  <Musician Id="5">
     <Email>daniel.jones@example.com</Email>
     <BirthYear>1982</BirthYear>
-    <Id>5</Id>
     <Name>Daniel Jones</Name>
   </Musician>
-  <Musician>
+  <Musician Id="6">
     <Email>sara.lee@example.com</Email>
     <BirthYear>1979</BirthYear>
-    <Id>6</Id>
     <Name>Sara Lee</Name>
   </Musician>
-  <Musician>
+  <Musician Id="7">
     <Email>chris.green@example.com</Email>
     <BirthYear>1980</BirthYear>
-    <Id>7</Id>
     <Name>Chris Green</Name>
   </Musician>
-  <Musician>
+  <Musician Id="8">
     <Email>laura.king@example.com</Email>
     <BirthYear>1990</BirthYear>
-    <Id>8</Id>
     <Name>Laura King</Name>
   </Musician>
-  <Musician>
+  <Musician Id="9">
     <Email>robert.taylor@example.com</Email>
     <BirthYear>1991</BirthYear>
-    <Id>9</Id>
     <Name>Robert Taylor</Name>
   </Musician>
-  <Musician>
+  <Musician Id="10">
     <Email>olivia.wilson@example.com</Email>
     <BirthYear>1994</BirthYear>
-    <Id>10</Id>
     <Name>Olivia Wilson</Name>
   </Musician>
 </Musicians>

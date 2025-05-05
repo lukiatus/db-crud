@@ -1,6 +1,5 @@
 <Places>
-  <Place>
-    <Id>1</Id>
+  <Place Id="1">
     <Country>USA</Country>
     <City>Las Vegas</City>
     <Street>E. Flamingo Rd</Street>
@@ -8,8 +7,7 @@
     <Name>The Rainbow Bar</Name>
     <Capacity>200</Capacity>
   </Place>
-  <Place>
-    <Id>2</Id>
+  <Place Id="2">
     <Country>USA</Country>
     <City>Las Vegas</City>
     <Street>W Tropicana Ave</Street>
@@ -17,8 +15,7 @@
     <Name>The Cat’s Meow</Name>
     <Capacity>300</Capacity>
   </Place>
-  <Place>
-    <Id>3</Id>
+  <Place Id="3">
     <Country>USA</Country>
     <City>Las Vegas</City>
     <Street>Las Vegas Blvd S</Street>
@@ -26,8 +23,7 @@
     <Name>The Hard Rock Café</Name>
     <Capacity>600</Capacity>
   </Place>
-  <Place>
-    <Id>4</Id>
+  <Place Id="4">
     <Country>USA</Country>
     <City>Las Vegas</City>
     <Street>E Tropicana Ave</Street>

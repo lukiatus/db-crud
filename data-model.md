@@ -51,5 +51,5 @@ Helyszínek adatai
 ##  ER-modell
 ![ER-modell](er-model.png)
 
-## Relációs modell
-![Relációs modell](relational-model.png)
+## XDM
+![XDM](XDM.png)

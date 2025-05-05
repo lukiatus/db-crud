@@ -61,11 +61,11 @@ public class Main {
                           return $c
                         )[1]
                         let $concertPlaceId := $latestConcert/PlaceId
-                        let $venueName := //Places/Place[Id = $concertPlaceId]/Name
+                        let $venueName := //Places/Place[@Id = $concertPlaceId]/Name
                         let $headlinerBandId := $latestConcert/HeadlinerBandId
-                        let $headlinerBand := //Bands/Band[Id = $headlinerBandId]
+                        let $headlinerBand := //Bands/Band[@Id = $headlinerBandId]
                         let $leaderMusicianId := $headlinerBand/LeaderMusicianId
-                        let $leaderMusicianEmail := //Musicians/Musician[Id = $leaderMusicianId]/Email
+                        let $leaderMusicianEmail := //Musicians/Musician[@Id = $leaderMusicianId]/Email
                         return
                           <Result>
                             <Venue>{ $venueName }</Venue>
@@ -90,17 +90,17 @@ public class Main {
                         xquery version "3.1";
                         <Result>{
                           for $band in //Bands/Band
-                          let $bandId := $band/Id
+                          let $bandId := $band/@Id
                           let $bandName := $band/Name
                           let $leaderMusicianId := $band/LeaderMusicianId
                           let $musicians :=
                             for $bm in //BandMusicians/BandMusician[BandId = $bandId]
-                            let $musician := //Musicians/Musician[Id = $bm/MusicianId]
+                            let $musician := //Musicians/Musician[@Id = $bm/MusicianId]
                             return $musician
-                          let $leader := $musicians[Id = $leaderMusicianId]/Name/text()
+                          let $leader := $musicians[@Id = $leaderMusicianId]/Name/text()
                           let $members :=
                             for $m in $musicians
-                            where $m/Id != $leaderMusicianId
+                            where $m/@Id != $leaderMusicianId
                             return $m/Name/text()
                           let $allNames := string-join(($leader, $members), ", ")
                           return
@@ -130,11 +130,11 @@ public class Main {
                        return
                          <Result>{
                            for $band in //Bands/Band
-                           let $bandId := $band/Id
+                           let $bandId := $band/@Id
                            let $bandName := $band/Name
                            let $musicians :=
                              for $bm in //BandMusicians/BandMusician[BandId = $bandId]
-                             let $musician := //Musicians/Musician[Id = $bm/MusicianId]
+                             let $musician := //Musicians/Musician[@Id = $bm/MusicianId]
                              return $musician
                            let $ages := for $m in $musicians return $currentYear - xs:integer($m/BirthYear)
                            let $avgAge := round(avg($ages))
@@ -187,7 +187,7 @@ public class Main {
         String updateQuery =
                 """
                         xquery version "3.1";
-                        let $musician := collection('%s')/Musicians/Musician[Id='%s']
+                        let $musician := collection('%s')/Musicians/Musician[@Id='%s']
                         return (
                             update replace $musician/Name with <Name>{concat(string($musician/Name), ' Edited')}</Name>,
                             update replace $musician/Email with <Email>{concat('edited.', string($musician/Email))}</Email>
@@ -208,7 +208,7 @@ public class Main {
         String deleteQuery =
                 """
                                 xquery version "3.1";
-                                let $musician := collection('%s')/Musicians/Musician[Id='%s']
+                                let $musician := collection('%s')/Musicians/Musician[@Id='%s']
                                 return update delete $musician
                 """.formatted(collection.getName(), musicianIdToDelete);
 
