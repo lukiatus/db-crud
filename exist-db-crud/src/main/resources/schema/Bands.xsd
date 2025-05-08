@@ -11,7 +11,6 @@
                             <xs:element name="LeaderMusicianId" type="xs:integer"/>
                         </xs:sequence>
                         <xs:attribute name="Id" type="xs:integer" use="required"/>
-                        <xs:attribute name="LeaderMusicianId" type="xs:integer" use="optional"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

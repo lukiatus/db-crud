@@ -2,7 +2,7 @@
 
 <Bands xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="../schema/Bands.xsd">
-    <Band Id="1" LeaderMusicianId="1">
+    <Band Id="1">
         <Name>The Rockers</Name>
         <LeaderMusicianId>1</LeaderMusicianId>
     </Band>
